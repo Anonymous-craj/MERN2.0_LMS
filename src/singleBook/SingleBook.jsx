@@ -23,7 +23,9 @@ const SingleBook = () => {
       <img
         className="w-full"
         src={
-          "https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200"
+          book.imageUrl
+            ? book.imageUrl
+            : "https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200"
         }
       />
       <div className="px-6 py-4">
